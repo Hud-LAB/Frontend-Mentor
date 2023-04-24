@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap");
+
+.main {
+  display: flex;
+  margin: auto;
+  margin-top: 5em;
+  max-width: 40em;
+  border-radius: 2em;
+  box-shadow: 5px 5px 5px rgba(173, 171, 171, 0.623);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+p,
+h1,
+h2 {
+  text-align: center;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: rgba(255, 239, 213, 0.719);
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+h2 {
+  color: rgba(255, 239, 213, 0.719);
+  padding-top: 1em;
+}
+
+h4 {
+  margin: auto;
+  align-items: end;
+}
+
+.result {
+  height: 28em;
+  width: 20em;
+  border-radius: 2em;
+  background: linear-gradient(hsl(251, 76%, 64%), hsl(227, 49%, 40%));
+}
+
+.ball {
+  border-radius: 100%;
+  width: 10em;
+  height: 10em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  background: linear-gradient(
+    hsla(228, 79%, 44%, 0.685),
+    hsla(227, 49%, 49%, 0.767)
+  );
+}
+
+.number {
+  padding-top: 0.5em;
+  font-size: 4em;
+  margin-bottom: 0px;
+  color: white;
+}
+
+.subnumber {
+  margin-top: 0px;
+}
+
+.summary {
+  width: 50%;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.summaryTitle {
+  color: rgb(34, 34, 70);
+  margin-left: 1em;
+  text-align: start;
+}
+
+.itens {
+  background: rgba(158, 9, 9, 0.062);
+  width: 18em;
+  height: 2.5em;
+  margin: 0px 1em;
+  margin-top: 1.5em;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.red {
+  display: flex;
+  margin: 0.5em;
+  color: rgb(255, 85, 85);
+}
+
+.yellow {
+  display: flex;
+  margin: 0.5em;
+  color: rgb(255, 179, 33);
+}
+
+.green {
+  display: flex;
+  margin: 0.5em;
+  color: rgb(6, 189, 146);
+}
+
+.blue {
+  display: flex;
+  margin: 0.5em;
+  color: rgb(39, 57, 217);
+}
+
+span {
+  color: rgba(156, 156, 156, 0.918);
+}
+
+button {
+  color: white;
+  background: rgb(34, 34, 70);
+  width: 90%;
+  margin: 10.5% 5% 5% 5%;
+  height: 3em;
+  border-radius: 20px;
+  border: none;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+button:hover {
+  background: rgb(62, 62, 128);
+  cursor: pointer;
+}
