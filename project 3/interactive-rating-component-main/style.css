@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+html {
+  background: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+}
+
+#boxRating {
+  background: hsl(213, 19%, 18%);
+  width: 85%;
+  margin: auto;
+  margin-top: 10%;
+  padding: 3%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  border-radius: 25px;
+}
+
+.star {
+  background: hsl(213, 18%, 24%);
+  border-radius: 100%;
+  font-weight: 700;
+  padding: 0.3em;
+  border-radius: 50%;
+  width: 2.1em;
+  height: 2.1em;
+  margin: 0;
+  border: none;
+}
+
+svg {
+  margin: 0.6em;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+}
+
+.rating {
+  justify-content: space-between;
+  display: flex;
+}
+
+.circle {
+  background: hsl(213, 18%, 24%);
+  color: hsl(217, 12%, 63%);
+  font-family: "Overpass", sans-serif;
+  border-radius: 100%;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 2.9em;
+  height: 2.9em;
+  margin: 0;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.circle:hover {
+  background: hsl(216, 12%, 54%);
+  cursor: pointer;
+  color: white;
+}
+
+.circle:focus {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.circle.button:hover {
+  color: white;
+}
+
+.submit {
+  background: hsl(25, 97%, 53%);
+  width: 100%;
+  margin-top: 10%;
+  border-radius: 25px;
+  height: 2.8em;
+  font-size: 16px;
+  border: none;
+  color: white;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+button:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+}
+
+#boxThank {
+  display: none;
+  background: hsl(213, 19%, 18%);
+  width: 80%;
+  margin: auto;
+  margin-top: 10%;
+  padding: 3%;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.result {
+  background: hsl(213, 18%, 24%);
+  width: 55%;
+  margin: auto;
+  color: hsl(25, 97%, 53%);
+  padding: 0.3em;
+  border-radius: 15px;
+}
+
+.paragraph {
+  margin: 10px;
+}
+
+.attribution {
+  margin-top: 15px;
+  color: white;
+}
+
+@media screen and (min-width: 376px) {
+  #boxRating {
+    width: 25%;
+  }
+
+  #boxThank {
+    width: 25%;
+  }
+}
