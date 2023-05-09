@@ -10,7 +10,7 @@ html {
   width: 85%;
   margin: auto;
   margin-top: 10%;
-  padding: 3%;
+  padding: 5%;
   padding-top: 10%;
   padding-bottom: 10%;
   border-radius: 25px;
@@ -99,10 +99,11 @@ button:hover {
 #boxThank {
   display: none;
   background: hsl(213, 19%, 18%);
-  width: 80%;
+  width: 85%;
   margin: auto;
   margin-top: 10%;
   padding: 3%;
+  padding-top: 10%;
   border-radius: 25px;
   text-align: center;
 }
@@ -125,12 +126,14 @@ button:hover {
   color: white;
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 1000px) {
   #boxRating {
     width: 25%;
+    padding: 3%;
   }
 
   #boxThank {
     width: 25%;
+    padding: 3%;
   }
 }
