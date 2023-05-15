@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+body {
+  /* background-image: url(images/bg-pattern-desktop.svg); */
+  background: Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.logo {
+  margin: 2em;
+  width: 6em;
+  height: auto;
+}
+
+.imgMobile {
+  width: 100%;
+}
+
+.imgDesktop {
+    display: none;
+}
+
+h1 {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  font-size: 3em;
+  margin-top: 0;
+}
+
+.h1Were {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+  margin: 0;
+  margin: 15% 0 0% 0;
+}
+
+br {
+    display: none;
+}
+
+p {
+  font-size: 16px;
+  margin: 2%;
+  text-align: center;
+  color: hsl(0, 36%, 70%);
+}
+
+.email {
+  height: auto;
+  position: relative;
+  margin: 5%;
+}
+
+.input {
+  border: 1px solid #f8bfbf;
+  padding-left: 5%;
+  border-radius: 25px;
+  width: 85%;
+  height: 3em;
+}
+
+.error {
+  color: red;
+  display: none;
+  text-align: start;
+  margin-top: -10px;
+  margin-left: 10%;
+}
+
+::-webkit-input-placeholder {
+  color: hsla(0, 36%, 70%, 0.418);
+  font-weight: bold;
+}
+
+button {
+  background: linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%) 100%);
+  box-shadow: 5px 5px 20px hsla(0, 26%, 46%, 0.473);
+  border: none;
+  border-radius: 25px;
+  height: 100%;
+  width: 18%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 75%;
+}
+
+button:hover {
+  cursor: pointer;
+  background: linear-gradient(90deg, hsl(0, 80%, 90%), hsl(0, 74%, 82%) 100%);
+  box-shadow: 5px 10px 15px hsla(0, 26%, 46%, 0.589);
+}
+
+.errorSvg {
+    margin-left: -25%;
+    margin-bottom: -2%;
+    display: none;
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .main {  
+        display: flex; 
+    }
+
+    .imgMobile {
+        display: none;
+    }
+
+    .imgDesktop {
+        display: block;
+        width: 50%;
+        height: 100vh;
+    }
+
+    .logo {
+        width: 20%;
+        margin: 8% 0 8% 15%;
+    }
+
+    .h1Were {
+        margin-top: 2%;
+        margin-left: 15%;
+    }
+
+    h1 {
+        text-align: start;
+        margin-left: 15%;
+        font-size: 4em;
+        letter-spacing: .3em;
+        margin-bottom: 2%;
+    }
+
+    br {
+        display: block;
+    }
+
+    p {
+        margin: 0 32% 0 15%;
+        text-align: start;
+    }
+
+    .email {
+        margin: 5% 22% 0 15%;
+    }
+
+    .error {
+        margin-top: 10px;
+        margin-left: 18%;
+    }
+
+    .errorSvg {
+        margin-bottom: -1.5%;
+    }
+
+
+    .attribution {
+        margin: 5% 0 5% 0;
+    }
+}
