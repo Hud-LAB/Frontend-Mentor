@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Manrope", sans-serif;
+}
+
+.main {
+  width: 330px;
+  margin: auto;
+  margin-top: 10%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.img {
+  max-width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.title {
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+  margin: 11%;
+  margin-bottom: 0;
+}
+
+.paragraph {
+  font-size: 13px;
+  font-weight: 500;
+  color: hsl(214, 17%, 51%);
+  margin: 11%;
+  margin-top: 5%;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 40px 140px 30px;
+  justify-content: space-between;
+  margin-left: 11%;
+  margin-right: 11%;
+  padding-bottom: 4%;
+}
+
+.imgInfo {
+  width: 40px;
+  border-radius: 50px;
+}
+
+.person {
+  font-size: 16px;
+}
+
+.shareInfo {
+  margin-top: 10px;
+}
+
+.name {
+  color: hsl(217, 19%, 35%);
+}
+
+.date {
+  color: hsl(214, 17%, 51%);
+}
+
+.share {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  border: none;
+}
+
+.links {
+  display: none;
+  grid-template-columns: 70px 120px 30px;
+  padding-bottom: 4%;
+  justify-content: space-between;
+  background-color: hsl(217, 19%, 35%);
+  padding-left: 11%;
+  padding-right: 11%;
+  padding-top: 4%;
+  border-radius: 0 0 10px 10px;
+  align-items: center;
+}
+
+.popUp {
+  display: none;
+}
+
+h3 {
+  color: hsl(214, 17%, 51%);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.svgs {
+  display: grid;
+  grid-template-columns: 35px 35px 35px;
+}
+
+.imgSvg {
+  width: 20px;
+  border-radius: 0;
+}
+
+.shareLink {
+  background-color: hsl(214, 17%, 51%);
+  color: hsl(210, 46%, 95%);
+}
+
+.attribution {
+  margin-top: 10%;
+}
+
+@media screen and (min-width: 1000px) {
+  .main {
+    display: flex;
+    margin: 10% auto;
+    width: 800px;
+  }
+
+  .img {
+    width: 350px;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .title {
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .info {
+    display: grid;
+  }
+
+  .person {
+    margin-left: -50px;
+  }
+
+  .links {
+    position: absolute;
+    top: 330px;
+    left: 950px;
+    height: 30px;
+    width: 160px;
+    padding: 10px;
+    padding-left: 50px;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  .shareLink {
+    display: none;
+  }
+
+  .popUp {
+    display: grid;
+    justify-content: center;
+    padding-top: 8px;
+  }
+
+  .triangle {
+    display: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 370px;
+    left: 1030px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid  hsl(217, 19%, 35%);
+  }
+
+  .shareInfo {
+    display: none;
+  }
+}
