@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: hsl(234, 29%, 20%);
+}
+
+.content {
+  margin: 2%;
+}
+
+.main {
+  display: block;
+  width: 375px;
+  margin: auto;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.imgMobile {
+  display: block;
+}
+
+.imgDesktop {
+  display: none;
+}
+
+h1 {
+  margin: 25px 0 10px 20px;
+  color: hsl(234, 29%, 20%);
+}
+
+p {
+  margin: 10px 20px;
+  line-height: 25px;
+  color: hsl(235, 18%, 26%);
+}
+
+.topics {
+  margin-bottom: 30px;
+}
+
+.topic {
+  display: flex;
+  margin: 10px 20px;
+}
+
+label {
+  margin: 10px 20px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+input {
+  width: 310px;
+  margin: 10px 20px;
+  height: 50px;
+  border-color: hsla(240, 2%, 61%, 0.185);
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+button {
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  width: 320px;
+  margin: 10px 20px;
+  height: 50px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+button:hover {
+    background:radial-gradient(hsl(4, 94%, 54%),hsl(4, 98%, 63%)); 
+    box-shadow: 1px 1px 20px hsl(4, 94%, 54%);
+    border-color: hsla(4, 94%, 54%, 0);
+
+}
+
+.errorVal {
+  display: flex;
+  justify-content: space-between;
+}
+
+#error {
+  display: none;
+  margin: 0;
+  margin-top: 5px;
+  margin-right: 20px;
+  color: hsl(4, 100%, 67%);
+  font-size: 12px;
+  font-weight: 700;
+
+}
+
+.thanks {
+  display: none;
+  height: 100vh;
+  width: 375px;
+  margin: auto;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.okImg {
+  width: 70px;
+  margin: 100px 0px 10px 20px;
+}
+
+.thanksH1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+span {
+  font-weight: 700;
+}
+
+.dismiss {
+  margin-top: 40%;
+}
+
+@media screen and (min-width: 1000px) {
+  .main {
+    width: 850px;
+    margin: auto;
+    padding: 1.5%;
+    border-radius: 25px;
+    margin-top: 2%;
+  }
+  .deskDiv {
+    display: flex;
+  }
+
+  .imgDesktop {
+    display: block;
+    width: 370px;
+  }
+
+  .imgMobile {
+    display: none;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  #error {
+    margin-right: 100px;
+  }
+
+  .thanks {
+    width: 400px;
+    height: 450px;
+    margin-top: 20%;
+    border-radius: 25px;
+    padding: 3%;
+  }
+
+  .okImg {
+   width: 65px; 
+   margin-top: 0;
+  }
+
+  .thanksH1 {
+    font-size: 55px;
+    margin-top: 5px;
+  }
+
+  .dismiss {
+    width: 100%;
+    margin: 0;
+    margin-top: 15px;
+  }
+}
