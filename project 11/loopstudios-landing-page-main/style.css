@@ -1,0 +1,505 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 40%, 4%);
+  --font-family-Alata: "Alata", sans-serif;
+  --font-family-Josefin: "Josefin Sans", sans-serif;
+  --earth: url("../loopstudios-landing-page-main/images/mobile/image-deep-earth.jpg");
+  --arcade: url("../loopstudios-landing-page-main/images/mobile/image-night-arcade.jpg");
+  --soccer: url("../loopstudios-landing-page-main/images/mobile/image-soccer-team.jpg");
+  --grid: url("../loopstudios-landing-page-main/images/mobile/image-grid.jpg");
+  --above: url("../loopstudios-landing-page-main/images/mobile/image-from-above.jpg");
+  --pocket: url("../loopstudios-landing-page-main/images/mobile/image-pocket-borealis.jpg");
+  --curiosity: url("../loopstudios-landing-page-main/images/mobile/image-curiosity.jpg");
+  --fisheye: url("../loopstudios-landing-page-main/images/mobile/image-fisheye.jpg");
+
+  --earthD: url("../loopstudios-landing-page-main/images/desktop/image-deep-earth.jpg");
+  --arcadeD: url("../loopstudios-landing-page-main/images/desktop/image-night-arcade.jpg");
+  --soccerD: url("../loopstudios-landing-page-main/images/desktop/image-soccer-team.jpg");
+  --gridD: url("../loopstudios-landing-page-main/images/desktop/image-grid.jpg");
+  --aboveD: url("../loopstudios-landing-page-main/images/desktop/image-from-above.jpg");
+  --pocketD: url("../loopstudios-landing-page-main/images/desktop/image-pocket-borealis.jpg");
+  --curiosityD: url("../loopstudios-landing-page-main/images/desktop/image-curiosity.jpg");
+  --fisheyeD: url("../loopstudios-landing-page-main/images/desktop/image-fisheye.jpg");
+}
+
+.main {
+  width: 375px;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  background: url("../loopstudios-landing-page-main/images/mobile/image-hero.jpg");
+  background-position: 100%;
+  background-size: 100%;
+  height: 600px;
+  width: 375px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  padding: 5%;
+  width: 150px;
+  z-index: 10;
+}
+
+.burger {
+  display: block;
+  padding: 5%;
+  width: 20px;
+  height: 15px;
+  z-index: 10;
+}
+
+.burgerX {
+  display: none;
+  z-index: 10;
+  padding: 5%;
+}
+
+.links {
+  background-color: var(--Black);
+  display: none;
+  padding-top: 50%;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  top: 0px;
+  height: 91%;
+  border-radius: 0 0 15px 15px;
+  align-items: center;
+}
+
+a {
+  font-family: var(--font-family-Josefin);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--White);
+  height: auto;
+  font-size: 30px;
+  padding-left: 5%;
+  text-align: justify;
+}
+
+.box {
+  width: 70%;
+  border: 2px solid var(--White);
+  color: var(--White);
+  text-transform: uppercase;
+  font-size: 40px;
+  margin: auto;
+  margin-top: 25%;
+  padding: 8%;
+  font-family: var(--font-family-Josefin);
+}
+
+.interactive {
+  width: 90%;
+  margin: 25% 5% 10% 5%;
+}
+
+h1 {
+  font-family: var(--font-family-Josefin);
+  text-transform: uppercase;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+p {
+  font-size: 15px;
+  font-family: var(--font-family-Alata);
+  color: var(--Dark-Gray);
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 25%;
+}
+
+.cards {
+  color: var(--White);
+  font-family: var(--font-family-Josefin);
+  text-transform: uppercase;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 8%;
+  height: 120px;
+  font-size: 26px;
+  background-size: 100%;
+}
+
+.earth {
+  background-image: var(--earth);
+}
+
+.arcade {
+  background-image: var(--arcade);
+}
+
+.soccer {
+  background-image: var(--soccer);
+}
+
+.grid {
+  background-image: var(--grid);
+}
+
+.above {
+  background-image: var(--above);
+}
+
+.pocket {
+  background-image: var(--pocket);
+}
+
+.curiosity {
+  background-image: var(--curiosity);
+}
+
+.fisheye {
+  background-image: var(--fisheye);
+}
+
+.cardText {
+  width: 150px;
+  padding: 15% 0% 0% 5%;
+}
+
+button {
+  width: 50%;
+  padding: 2%;
+  background-color: var(--White);
+  border-color: var(--Black);
+  font-family: var(--font-family-Alata);
+  font-size: 15px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0% 25% 20% 25%;
+}
+
+.buttonDesk {
+  display: none;
+}
+
+button:hover {
+  background-color: var(--Black);
+  color: var(--White);
+  cursor: pointer;
+}
+
+.footer {
+  background-color: black;
+  color: var(--White);
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.footerLogo {
+  width: 50%;
+  margin: 25%;
+  margin-bottom: 10%;
+}
+
+.footerLinks {
+  display: grid;
+  text-align: center;
+}
+
+.footerLink {
+  text-decoration: none;
+  margin-bottom: 6%;
+  color: var(--White);
+  font-family: var(--font-family-Alata);
+}
+
+.socials {
+  display: flex;
+  width: 50%;
+  height: 30px;
+  margin: 10% auto;
+  justify-content: space-between;
+}
+
+.footerP {
+  width: 300px;
+  padding-bottom: 10%;
+  margin-bottom: 0;
+}
+
+.attribution {
+  color: var(--White);
+  background-color: var(--Black);
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    width: 1440px;
+    margin: auto;
+  }
+
+  .head {
+    background: url("../loopstudios-landing-page-main/images/desktop/image-hero.jpg");
+    width: 1440px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .menu {
+    width: 1440px;
+    justify-content: space-between;
+    background-color: transparent;
+    height: 100px;
+  }
+
+  .logo {
+    padding-left: 11%;
+    width: 200px;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .links {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 500px;
+    margin-right: 5%;
+    background-color: transparent;
+    position: initial;
+  }
+
+  a {
+    margin-left: 5%;
+    padding: 0;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+
+
+  .links a:hover {
+    margin-bottom: 5px;
+    text-decoration:underline 5px;
+  }
+
+  .box {
+    width: 600px;
+    margin-top: 3%;
+    font-size: 65px;
+    margin-left: 7%;
+    padding: 2%;
+  }
+
+  .interactive {
+    width: 750px;
+    margin-left: 7%;
+    margin-top: 10%;
+  }
+
+  .leaderBox {
+    background-color: var(--White);
+    width: 560px;
+    position: absolute;
+    top: 950px;
+    left: 680px;
+  }
+
+  h1 {
+    margin-top: 15%;
+    font-size: 50px;
+    text-align: start;
+    margin-bottom: 6%;
+    margin-left: 10%;
+  }
+
+  p {
+    font-size: 16;
+    margin-bottom: 5%;
+    text-align: start;
+  }
+
+  .titleCardBox {
+    width: 1220px;
+    display: flex;
+    margin-left: 7%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .h1Creations {
+    width: 500px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    font-size: 60px;
+  }
+
+  .buttonDesk {
+    display: block;
+    width: 300px;
+    margin: 0;
+    padding: 1.3%;
+  }
+
+  .cardBox {
+    width: 1220px;
+    margin: 5% 0 5% 7%;
+    display: grid;
+    padding: 0;
+    height: auto;
+    justify-content: space-between;
+    grid-template-columns: 24% 24% 24% 24%;
+  }
+
+  .cards {
+    width: 100%;
+    height: auto;
+    height: 500px;
+    background-size: 100%;
+    background-position: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .earth {
+    background-image: var(--earthD);
+  }
+
+  .earth:hover {
+    opacity: 0.3;
+  }
+
+  .arcade {
+    background-image: var(--arcadeD);
+  }
+
+  .arcade:hover {
+    opacity: 0.3;
+  }
+
+  .soccer {
+    background-image: var(--soccerD);
+  }
+
+  .soccer:hover {
+    opacity: 0.3;
+  }
+
+  .grid {
+    background-image: var(--gridD);
+  }
+
+  .grid:hover {
+    opacity: 0.3;
+  }
+
+  .above {
+    background-image: var(--aboveD);
+  }
+
+  .above:hover {
+    opacity: 0.3;
+  }
+
+  .pocket {
+    background-image: var(--pocketD);
+  }
+
+  .pocket:hover {
+    opacity: 0.3;
+  }
+
+  .curiosity {
+    background-image: var(--curiosityD);
+  }
+  .curiosity:hover {
+    opacity: 0.3;
+  }
+
+  .fisheye {
+    background-image: var(--fisheyeD);
+  }
+
+  .fisheye:hover {
+    opacity: 0.3;
+  }
+
+  .cardText {
+    margin-left: 5%;
+    margin-top: 126%;
+  }
+
+  .buttonMob {
+    display: none;
+  }
+
+  .footer {
+    display: flex;
+    width: 1440px;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footerLinksBox {
+    width: 500px;
+    margin-left: 5%;
+  }
+
+  .footerLogo {
+    width: 200px;
+    margin: 4% 0% 2% 7%;
+  }
+
+  .footerLinks {
+    display: flex;
+    margin-left: 2%;
+  }
+
+  .footerLink {
+    margin-bottom: 0;
+  }
+
+  .footerSocialsBox {
+    margin-right: 6%;
+  }
+
+  .socials {
+    width: 190px;
+    margin-right: 9%;
+  }
+
+  .socials img:hover {
+    cursor: pointer;
+  }
+
+  .attribution {
+    padding-top: 5%;
+    font-size: 16px;
+    width: 1440px;
+    margin: auto;
+  }
+
+  .attribution a {
+    margin: 0;
+    padding: 0;
+  }
+}
