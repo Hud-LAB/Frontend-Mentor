@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="title">Our Pricing</h1>
+      <div class="switch" >
+        Annually
+        <input id="toggle" class="toggle" type="checkbox" />
+        <label id="switch" for="toggle"></label>
+        Monthly
+      </div>
+      <div class="cards">
+        <div class="card left">
+          <h2>Basic</h2>
+          <h3 class="dolarMount"><span>&dollar;</span>19.99</h3>
+          <h4 class="dolarAnnually"><span>&dollar;</span>199.99</h4>
+          <div class="option1">500 GB Storage</div>
+          <div class="option2">2 Users Allowed</div>
+          <div class="option3">Send up to 3 GB</div>
+          <div class="learn">Learn More</div>
+        </div>
+        <div class="card middle">
+          <h2>Professional</h2>
+          <h3 class="dolarMount"><span>&dollar;</span>24.99</h3>
+          <h4 class="dolarAnnually"><span>&dollar;</span>249.99</h4>
+          <div class="option1">1 TB Storage</div>
+          <div class="option2">5 Users Allowed</div>
+          <div class="option3">Send up to 10 GB</div>
+          <div class="learn">Learn More</div>
+        </div>
+        <div class="card right">
+          <h2>Master</h2>
+          <h3 class="dolarMount"><span>&dollar;</span>39.99</h3>
+          <h4 class="dolarAnnually"><span>&dollar;</span>399.99</h4>
+          <div class="option1">2 TB Storage</div>
+          <div class="option2">10 Users Allowed</div>
+          <div class="option3">Send up to 20 GB</div>
+          <div class="learn">Learn More</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/marlonsc15">Marlon SC</a>.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

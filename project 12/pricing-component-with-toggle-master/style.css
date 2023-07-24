@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+:root {
+  --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+  --Light-Grayish-Blue: hsl(233, 39%, 32%);
+  --Grayish-Blue: hsl(233, 13%, 49%);
+  --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+  --Linear-Gradient: linear-gradient(
+    50deg,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  --Linear-Gradient2: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  --font-family-montserrat: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-family-montserrat);
+}
+
+.main {
+  width: 375px;
+}
+
+.title {
+  margin: auto;
+  width: 200px;
+  margin-top: 5%;
+  color: var(--Dark-Grayish-Blue);
+}
+
+.switch {
+  display: flex;
+  width: 230px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-family-montserrat);
+  color: var(--Grayish-Blue);
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.toggle {
+  display: none;
+}
+
+.toggle + label {
+  width: 52px;
+  height: 30px;
+  background-color: var(--Light-Grayish-Blue);
+  display: block;
+  position: relative;
+  border-radius: 20px;
+  padding: 2px;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.toggle + label:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: white;
+  display: block;
+  border-radius: 50px;
+  right: unset;
+  left: 2px;
+  top: 2px;
+  transition: 200ms;
+}
+
+.toggle:checked + label:before {
+  content: "";
+  left: calc(100% - 32px);
+  box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+}
+
+.cards {
+}
+
+.card {
+  width: 310px;
+  margin: auto;
+  margin-bottom: 3%;
+  border-radius: 10px;
+  height: 400px;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.137);
+}
+
+h2 {
+  width: 100px;
+  margin: auto;
+  padding: 5% 0;
+  color: var(--Grayish-Blue);
+}
+
+.dolarAnnually {
+  color: var(--Dark-Grayish-Blue);
+  font-size: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dolarMount {
+  font-size: 75px;
+  display: none;
+  color: var(--Dark-Grayish-Blue);
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  font-size: 30px;
+}
+
+.option1 {
+  font-size: 15px;
+  width: 225px;
+  margin: auto;
+  padding: 5%;
+  border-top: 2px solid;
+  color: var(--Grayish-Blue);
+  border-color: var(--Very-Light-Grayish-Blue);
+}
+
+.option2 {
+  font-size: 15px;
+  width: 225px;
+  margin: auto;
+  padding: 5%;
+  border-top: 2px solid;
+  color: var(--Grayish-Blue);
+  border-color: var(--Very-Light-Grayish-Blue);
+}
+
+.option3 {
+  font-size: 15px;
+  width: 225px;
+  margin: auto;
+  padding: 5%;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  color: var(--Grayish-Blue);
+  border-color: var(--Very-Light-Grayish-Blue);
+}
+
+.learn {
+  background: var(--Linear-Gradient);
+  padding: 4%;
+  width: 230px;
+  margin: 5% auto;
+  color: white;
+  border-radius: 5px;
+}
+
+.learn:hover {
+  cursor: pointer;
+  background: white;
+  color: var(--Dark-Grayish-Blue);
+  border: 2px solid var(--Dark-Grayish-Blue) ;
+}
+
+.middle {
+  background: var(--Linear-Gradient2);
+}
+
+.middle h2 {
+  color: white;
+}
+
+.middle .dolarAnnually {
+  color: white;
+}
+
+.middle .dolarMount {
+  color: white;
+}
+
+.middle .option1 {
+  color: white;
+}
+.middle .option2 {
+  color: white;
+}
+.middle .option3 {
+  color: white;
+}
+
+.middle .learn {
+  background: white;
+  color: var(--Grayish-Blue);
+}
+
+.middle .learn:hover {
+  background: hsl(236, 72%, 79%);
+  color: white;
+  border: none;
+}
+
+.attribution {
+  margin-top: 3%;
+}
+
+@media screen and (min-width: 1000px) {
+  .main {
+    min-width: 1000px;
+    margin: auto;
+  }
+
+  .switch {
+    margin: 3% auto;
+  }
+
+  .cards {
+    display: flex;
+    align-items: center;
+    margin-left: 3.5%;
+  }
+
+  .card {
+    margin: 5% 0;
+  }
+
+  .left {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .middle {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .middle h2 {
+    margin-left: 25%;
+  }
+
+  .right {
+    border-radius: 0 10px 10px 0;
+  }
+}
